@@ -1,6 +1,8 @@
 Spec Finder
 ===================
 
+![atom-spec-finder-in-action](https://cloud.githubusercontent.com/assets/792201/11767436/b08fd090-a194-11e5-9336-0da4bf3d2202.gif)
+
 Spec Finder is a language-agnostic plugin for atom that lets you quickly jump between your source and spec files, by simple pressing <kbd>Ctrl</kbd>+<kbd>.</kbd> on atom editor.
 
 It is based on the homonymous plugin for Sublime Text 2.
