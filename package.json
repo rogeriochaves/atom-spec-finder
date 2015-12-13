@@ -1,7 +1,7 @@
 {
   "name": "atom-spec-finder",
   "main": "./lib/atom-spec-finder",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Shortcut for atom editor to switch between the file and its spec",
   "keywords": [
   ],
