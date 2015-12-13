@@ -24,3 +24,5 @@ This is the first version of this plugin, there is a problem that is still not s
 Also, the file locating is not very fast, which may freeze the editor for big projects. One idea is to use the linux `find` command directly, which is much faster, but has a poor understanding of regexes on mac and it wouldn't work on windows.
 
 By default it ignores the folders `/.git`, `/node_modules` and `/dist`, but it would be much better if it just read the `.gitignore` file and ignores files listed there.
+
+I'd also like to add the search regex as a config instead of hardcoded.
