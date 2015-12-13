@@ -8,7 +8,7 @@
   "activationCommands": {
     "atom-workspace": "atom-spec-finder:toggle"
   },
-  "repository": "https://github.com/atom/atom-spec-finder",
+  "repository": "https://github.com/rogeriochaves/atom-spec-finder",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
