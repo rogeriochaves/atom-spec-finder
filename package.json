@@ -1,0 +1,19 @@
+{
+  "name": "atom-spec-finder",
+  "main": "./lib/atom-spec-finder",
+  "version": "0.0.1",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "atom-spec-finder:toggle"
+  },
+  "repository": "https://github.com/atom/atom-spec-finder",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "fs-finder": "^1.8.1"
+  }
+}
