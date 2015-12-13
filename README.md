@@ -9,7 +9,7 @@ It is based on the homonymous plugin for Sublime Text 2.
 
 ## How does it work? How does it find my specs? ##
 
-The plugin gets your current filename, like `foo.js`, and adds the regex `/.?(spec|test)\./i` to it's end, so, it will try to match with files like this:
+The plugin gets your current filename, like `foo.js`, and adds the regex `/.?(spec|test)\./i` to its end, so, it will try to match with files like this:
 
 - `foo.spec.js`
 - `fooSpec.js`
