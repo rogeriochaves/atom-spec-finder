@@ -43,10 +43,10 @@ describe 'SpecFinder', ->
     bar = Path.join rootPath, 'src/a/b/bar.js'
     barSpec = Path.join rootPath, 'spec/a/b/bar.spec.js'
 
-    it 'returns spec file for tested file', ->
+    it 'returns spec file for source file', ->
       expect(specFinder.findSpecOrSource(rootPath, foo)).toBe fooSpec
       expect(specFinder.findSpecOrSource(rootPath, bar)).toBe barSpec
 
-    it 'returns tested file for spec file', ->
+    it 'returns source file for spec file', ->
       expect(specFinder.findSpecOrSource(rootPath, fooSpec)).toBe foo
       expect(specFinder.findSpecOrSource(rootPath, barSpec)).toBe bar

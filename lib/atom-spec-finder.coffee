@@ -22,7 +22,18 @@ findSpec = (rootPath, filePath) ->
   findMostSimilarFile(rootPath, filePath, goal)
 
 findMostSimilarFile = (rootPath, filePath, goal) ->
-  Finder.from(rootPath).findFirst().exclude(['/.git', '/node_modules', '/dist']).findFiles("<#{goal}>")
+  foundFiles = Finder.from(rootPath).exclude(['/.git', '/node_modules', '/dist']).findFiles("<#{goal}>")
+  foundFiles.map((file) ->
+    {path: file, diff: arrayDiff(file.split('/'), filePath.split('/')).length}
+  ).sort((a, b) ->
+    return -1 if a.diff < b.diff
+    return 1 if a.diff > b.diff
+    return 0
+  )[0]?.path
+
+arrayDiff = (x, y) ->
+  x.filter((z) -> y.indexOf(z) == -1).concat(
+    y.filter((z) -> x.indexOf(z) == -1))
 
 module.exports =
   findSpecOrSource: (rootPath, filePath) ->
